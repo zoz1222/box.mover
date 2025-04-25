@@ -5,13 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Box Mover | ZEA Developer</title>
 
-  <!-- Cairo Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,7 +14,8 @@
   <nav class="navbar">
     <div class="container nav-container">
       <div class="logo">Box Mover</div>
-      <ul class="nav-links">
+      <button id="menuToggle" class="menu-toggle">☰</button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="nav-link active">الرئيسية</a></li>
         <li><a href="#features" class="nav-link">المزايا</a></li>
         <li><a href="#download" class="nav-link">تحميل</a></li>
@@ -66,12 +61,8 @@
       <h2>حمل اللعبة الآن</h2>
       <p>اختر النسخة المناسبة لجهازك:</p>
       <div class="download-buttons">
-        <a href="https://www.mediafire.com/file/7s9pwtbr7lzze6o/BoxMover1.0.0.6pc.exe/file"
-           download
-           class="btn">ويندوز</a>
-        <a href="https://www.mediafire.com/file/6vz4p8yyvx28q2j/BoxMover1.0.0.6mob.apk/file"
-           download
-           class="btn">أندرويد</a>
+        <a href="https://www.mediafire.com/file/7s9pwtbr7lzze6o/BoxMover1.0.0.6pc.exe/file" download class="btn">ويندوز</a>
+        <a href="https://www.mediafire.com/file/6vz4p8yyvx28q2j/BoxMover1.0.0.6mob.apk/file" download class="btn">أندرويد</a>
         <button id="smartDownload" class="btn">تحميل ذكي</button>
       </div>
     </div>
@@ -81,11 +72,12 @@
   <section id="contact" class="section">
     <div class="container text-center">
       <h2>تواصل معنا</h2>
-      <form class="contact-form" action="https://formsubmit.co/z7355108@gmail.com" method="POST">
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/z7355108@gmail.com" method="POST">
         <input type="text" name="name" placeholder="اسمك" required />
         <input type="email" name="email" placeholder="بريدك الإلكتروني" required />
         <textarea name="message" placeholder="رسالتك" rows="4" required></textarea>
         <button type="submit" class="btn">إرسال</button>
+        <p id="formResponse" class="form-response"></p>
       </form>
     </div>
   </section>
@@ -96,7 +88,6 @@
     </div>
   </footer>
 
-  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
