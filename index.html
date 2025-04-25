@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Box Mover | ZEA Developer</title>
+
+  <!-- Cairo Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Box Mover</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#features" class="nav-link">المزايا</a></li>
+        <li><a href="#download" class="nav-link">تحميل</a></li>
+        <li><a href="#contact" class="nav-link">تواصل</a></li>
+      </ul>
+      <button id="darkToggle" class="dark-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="section hero">
+    <div class="container hero-content">
+      <h1>مرحبًا في Box Mover</h1>
+      <p>مغامرة ألغاز مثيرة تنتظرك — حرّك الصناديق ووصل إلى الهدف!</p>
+      <button class="btn" onclick="scrollToSection('download')">تحميل الآن</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container text-center">
+      <h2>المزايا</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>أكثر من 5 مستوى</h3>
+          <p>ألغاز متنوعة تتدرج في الصعوبة.</p>
+        </div>
+        <div class="card">
+          <h3>واجهة سلسة</h3>
+          <p>تحكم سهل ودقيق في حركة الصناديق.</p>
+        </div>
+        <div class="card">
+          <h3>رسومات جذابة</h3>
+          <p>ألوان وتصاميم مريحة للعين.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="section download">
+    <div class="container text-center">
+      <h2>حمل اللعبة الآن</h2>
+      <p>اختر النسخة المناسبة لجهازك:</p>
+      <div class="download-buttons">
+        <a href="https://www.mediafire.com/file/7s9pwtbr7lzze6o/BoxMover1.0.0.6pc.exe/file"
+           download
+           class="btn">ويندوز</a>
+        <a href="https://www.mediafire.com/file/6vz4p8yyvx28q2j/BoxMover1.0.0.6mob.apk/file"
+           download
+           class="btn">أندرويد</a>
+        <button id="smartDownload" class="btn">تحميل ذكي</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container text-center">
+      <h2>تواصل معنا</h2>
+      <form class="contact-form" action="https://formsubmit.co/z7355108@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="اسمك" required />
+        <input type="email" name="email" placeholder="بريدك الإلكتروني" required />
+        <textarea name="message" placeholder="رسالتك" rows="4" required></textarea>
+        <button type="submit" class="btn">إرسال</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2025 ZEA Developer. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
